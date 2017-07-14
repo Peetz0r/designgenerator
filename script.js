@@ -160,7 +160,7 @@ function toCanvas(id, text, flagcolors, size, codeproportion, showtext, showcode
 
     // your message
     if (showtext){
-        ctx.font = size+"px 'Roboto-Black'";
+        ctx.font = 'bold ' + size + "px 'Roboto'";
         ctx.textAlign = "center";
         ctx.textBaseline= "middle";
         //ctx.alignment-baseline = "middle";
@@ -171,7 +171,7 @@ function toCanvas(id, text, flagcolors, size, codeproportion, showtext, showcode
     if (showcode){
         size = size / (codeproportion / 10);
         minsize = size > 6 ? size : 6;
-        ctx.font = minsize+"px 'Roboto-Black'";
+        ctx.font = 'bold ' + minsize + "px 'Roboto'";
         ctx.textAlign = "right"
         ctx.textBaseline= "alphabetic";
 
